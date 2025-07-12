@@ -1,40 +1,76 @@
-# TOBB ETÜ ELE495 - Capstone Project
+# 🚗 Voice-Controlled Autonomous Mini Vehicle (ELE 495 Capstone Project)
 
-# Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Acknowledgements](#acknowledgements)
+This project is a smart autonomous vehicle that can understand **Turkish natural language voice commands** and act accordingly using AI. The system interprets spoken commands, converts them into basic movement instructions, and controls a mobile robot accordingly — all while giving real-time voice feedback in Turkish.
 
-## Introduction
-Provide a brief overview of the project, its purpose, and what problem it aims to solve.
+---
 
-## Features
-List the key features and functionalities of the project.
-- Hardware: The hardware components used (should be listed with links)
-- Operating System and packages
-- Applications 
-- Services 
+## 🎯 Key Features
 
-## Installation
-Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
+- Understands Turkish speech in natural language  
+- Uses Google Gemini to extract intent from sentences  
+- Sends motor commands in structured JSON format  
+- Moves autonomously based on commands and obstacle feedback  
+- Gives spoken responses using Text-to-Speech (TTS)  
+- Real-time system monitoring through a web interface
+
+---
+
+## 🧠 System Flow
+
+1. User gives a voice command via wireless microphone  
+2. Raspberry Pi uses STT to convert speech to text  
+3. GPT-4 processes the sentence and generates JSON control data  
+4. Raspberry Pi parses JSON and moves the vehicle accordingly  
+5. Ultrasonic sensors detect obstacles during movement  
+6. Web interface shows current command, system status, and logs  
+
+📌 See diagram below:
+<p align="center">
+  <img width="650" alt="Account ownership flow (1)" src="https://github.com/user-attachments/assets/c8504bc2-4d1d-4060-b34f-c7a87122165c" />
+</p>
+
+
+---
+
+## 🖥 Web Interface
+
+A Flask-based dashboard provides:
+
+- Command logs  
+- Current vehicle status (moving, stopped, turning, etc.)  
+- JSON command preview  
+- Live STT output  
+- Error messages and feedback
+
+**➡️ [Insert screenshot of the web UI here]**
+
+---
+
+## 🚘 Final Prototype Image
+
+➡️
+<p align="center">
+  <img width="650" alt="Final Vehicle Image" src="https://github.com/user-attachments/assets/cad90b9d-c54d-490d-a50d-123af8b792b4"  />
+</p>
+</p>
+
+
+
+---
+
+## 🎬 Demo Video
+
+**➡️ [Insert working video or YouTube link here]**
+
+---
+
+## 📁 Folder Structure
 
 ```bash
-# Example commands
-git clone https://github.com/username/project-name.git
-cd project-name
-```
-
-## Usage
-Provide instructions and examples on how to use the project. Include code snippets or screenshots where applicable.
-
-## Screenshots
-Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here. 
-
-## Acknowledgements
-Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
-
-[Contributor 1](https://github.com/user1)
-[Resource or Tool](https://www.nvidia.com)
+├── main.py                  # Core control loop
+├── stt_module.py           # Speech-to-Text handling
+├── llm_module.py           # GPT integration
+├── tts_module.py           # Voice feedback
+├── static/ and templates/  # Flask web files
+├── commands.json           # Generated movement commands
+├── status_logs.json        # Live logs for web UI
