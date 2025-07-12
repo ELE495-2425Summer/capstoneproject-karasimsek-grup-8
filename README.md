@@ -26,8 +26,9 @@ This project is a smart autonomous vehicle that can understand **Turkish natural
 
 📌 See diagram below:
 <p align="center">
-  <img width="650" alt="Account ownership flow (1)" src="https://github.com/user-attachments/assets/c8504bc2-4d1d-4060-b34f-c7a87122165c" />
+  <img width="650" alt="Account ownership flow (1)" src="https://github.com/user-attachments/assets/4ff87375-291d-4656-a9ba-2594944288f4" />
 </p>
+
 
 
 ---
