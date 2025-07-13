@@ -42,17 +42,16 @@ A Flask-based dashboard provides:
 - JSON command preview  
 - Live STT output  
 - Error messages and feedback
-
-➡️ <img width="1440" height="848" alt="Ekran Resmi 2025-07-13 10 13 59" src="https://github.com/user-attachments/assets/1515dac6-cdd1-4219-9d17-1be28dfb1650" />
+<p align="center">
+  <img width="650" height="507" alt="Ekran Resmi 2025-07-13 13 25 53" src="https://github.com/user-attachments/assets/7418f97b-9aa6-446d-b5d4-93619dc0f78d" />
+</p>
 
 ---
 
 ## 🚘 Final Prototype Image
 
-➡️
 <p align="center">
   <img width="650" alt="Final Vehicle Image" src="https://github.com/user-attachments/assets/cad90b9d-c54d-490d-a50d-123af8b792b4"  />
-</p>
 </p>
 
 
