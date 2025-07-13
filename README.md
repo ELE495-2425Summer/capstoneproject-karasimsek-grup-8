@@ -29,8 +29,6 @@ This project is a smart autonomous vehicle that can understand **Turkish natural
   <img width="650" alt="Account ownership flow (1)" src="https://github.com/user-attachments/assets/4ff87375-291d-4656-a9ba-2594944288f4" />
 </p>
 
-
-
 ---
 
 ## 🖥 Web Interface
@@ -51,10 +49,8 @@ A Flask-based dashboard provides:
 ## 🚘 Final Prototype Image
 
 <p align="center">
-  <img width="650" alt="Final Vehicle Image" src="https://github.com/user-attachments/assets/cad90b9d-c54d-490d-a50d-123af8b792b4"  />
+  <img width="650" alt="Final Vehicle Image" src="https://github.com/user-attachments/assets/cad90b9d-c54d-490d-a50d-123af8b792b4" />
 </p>
-
-
 
 ---
 
@@ -67,10 +63,40 @@ A Flask-based dashboard provides:
 ## 📁 Folder Structure
 
 ```bash
-├── main.py                  # Core control loop
-├── stt_module.py           # Speech-to-Text handling
-├── llm_module.py           # GPT integration
-├── tts_module.py           # Voice feedback
-├── static/ and templates/  # Flask web files
-├── commands.json           # Generated movement commands
-├── status_logs.json        # Live logs for web UI
+code/
+├── src/
+│   ├── main.py
+│   ├── main2.py
+│   ├── audio/
+│   │   ├── recorder.py
+│   │   ├── speech_to_text.py
+│   │   └── text_to_speech.py
+│   ├── llm/
+│   │   └── gemini_client.py
+│   ├── ml/
+│   │   ├── command_classifier.py
+│   │   ├── feature_extraction.py
+│   │   └── speaker_recognition.py
+│   ├── vehicle/
+│   │   ├── motor_control.py
+│   │   ├── navigation.py
+│   │   ├── pid_control.py
+│   │   └── sensors.py
+│   ├── web/
+│   │   ├── app.py
+│   │   └── templates/
+│   │       └── index.html
+│   └── utils/
+│       └── web_logger.py
+├── config/
+│   ├── commands.json
+│   ├── status_logs.json
+│   ├── vehicle_status.json
+│   └── task_history.json
+├── models/
+│   ├── modelV2/
+│   └── modelV3/
+├── data/
+├── tests/
+└── requirements.txt
+```
