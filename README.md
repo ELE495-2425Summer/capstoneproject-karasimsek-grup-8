@@ -43,7 +43,7 @@ A Flask-based dashboard provides:
 - Live STT output  
 - Error messages and feedback
 
-**➡️ [Insert screenshot of the web UI here]**
+➡️ <img width="1440" height="848" alt="Ekran Resmi 2025-07-13 10 13 59" src="https://github.com/user-attachments/assets/1515dac6-cdd1-4219-9d17-1be28dfb1650" />
 
 ---
 
@@ -61,7 +61,7 @@ A Flask-based dashboard provides:
 
 ## 🎬 Demo Video
 
-**➡️ [Insert working video or YouTube link here]**
+➡️ https://youtu.be/ZY2JyAAKZ6M
 
 ---
 
